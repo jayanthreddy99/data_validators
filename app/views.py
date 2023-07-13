@@ -10,5 +10,5 @@ def sf(request):
         if SFD.is_valid():
             return HttpResponse(str(SFD.cleaned_data))
         else:
-            return HttpResponse('invalid Data')
+            return HttpResponse('invalid Data!!!')
     return render(request,'sf.html',d)

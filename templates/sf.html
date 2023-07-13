@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +9,27 @@
         h2
         {
             color:blue;
+            
         }
         h1{
             color: red;
+            margin: 0px;
+        }
+        body
+        {
+            background-color: lavender;
+        }
+        #abc
+        {
+            background-color: brown;
+            padding: 12px;
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            border-radius: 7px;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px blue;
+            color: black;
         }
     </style>
 </head>
@@ -20,7 +39,7 @@
         <form method="POST">
             {% csrf_token %}
                 <h2>{{SFO.as_p}}</h2>
-            <input type="submit" value="Sunmit">
+            <input id="abc" type="submit" value="Submit">
         </form>
     </center>
 </body>
